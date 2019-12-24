@@ -14,9 +14,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Tests", "DickinsonBros.Guid.Tests\DickinsonBros.Guid.Tests.csproj", "{37D89CD2-095E-4EDF-BF2D-7B410923F028}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9 Misc", "9 Misc", "{A298E729-D3A5-4B8D-8A61-0DE7468E2E8C}"
-	ProjectSection(SolutionItems) = preProject
-		DeployNotes.txt = DeployNotes.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{88FBD70D-6871-4892-B985-4A8DB8D9791B}"
 	ProjectSection(SolutionItems) = preProject
