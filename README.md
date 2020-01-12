@@ -1,6 +1,6 @@
 # DickinsonBros.Guid
 
-A wrapper Library for DateTime
+A wrapper Library for Guid
 
 Features
 
