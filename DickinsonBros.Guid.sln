@@ -7,24 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid", "Dicki
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Library", "1 Library", "{E5BD1FED-B9DB-46EE-8081-43AA428F9789}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Interface", "0 Interface", "{B6D305D8-3D00-46B8-A89B-C5C94A3210ED}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Abstractions", "DickinsonBros.Guid.Abstractions\DickinsonBros.Guid.Abstractions.csproj", "{6DEFEEA6-5497-4B40-BF40-FF4993E479E9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Tests", "DickinsonBros.Guid.Tests\DickinsonBros.Guid.Tests.csproj", "{37D89CD2-095E-4EDF-BF2D-7B410923F028}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9 Misc", "9 Misc", "{A298E729-D3A5-4B8D-8A61-0DE7468E2E8C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{88FBD70D-6871-4892-B985-4A8DB8D9791B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9 Scripts", "9 Scripts", "{A298E729-D3A5-4B8D-8A61-0DE7468E2E8C}"
 	ProjectSection(SolutionItems) = preProject
-		Scripts\Library\CreateNugetPackage.ps1 = Scripts\Library\CreateNugetPackage.ps1
-		Scripts\Library\CreateNugetPackagePreRelease.ps1 = Scripts\Library\CreateNugetPackagePreRelease.ps1
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{E6B43B70-B096-40CB-855C-67107AEAC674}"
-	ProjectSection(SolutionItems) = preProject
-		Scripts\Interface\CreateNugetPackage.ps1 = Scripts\Interface\CreateNugetPackage.ps1
-		Scripts\Interface\CreateNugetPackagePreRelease.ps1 = Scripts\Interface\CreateNugetPackagePreRelease.ps1
+		Scripts\CreateNugetPackagePreRelease.ps1 = Scripts\CreateNugetPackagePreRelease.ps1
 	EndProjectSection
 EndProject
 Global
@@ -37,10 +24,6 @@ Global
 		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6DEFEEA6-5497-4B40-BF40-FF4993E479E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6DEFEEA6-5497-4B40-BF40-FF4993E479E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6DEFEEA6-5497-4B40-BF40-FF4993E479E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6DEFEEA6-5497-4B40-BF40-FF4993E479E9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37D89CD2-095E-4EDF-BF2D-7B410923F028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37D89CD2-095E-4EDF-BF2D-7B410923F028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37D89CD2-095E-4EDF-BF2D-7B410923F028}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,10 +34,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122} = {E5BD1FED-B9DB-46EE-8081-43AA428F9789}
-		{6DEFEEA6-5497-4B40-BF40-FF4993E479E9} = {B6D305D8-3D00-46B8-A89B-C5C94A3210ED}
 		{37D89CD2-095E-4EDF-BF2D-7B410923F028} = {E5BD1FED-B9DB-46EE-8081-43AA428F9789}
-		{88FBD70D-6871-4892-B985-4A8DB8D9791B} = {A298E729-D3A5-4B8D-8A61-0DE7468E2E8C}
-		{E6B43B70-B096-40CB-855C-67107AEAC674} = {A298E729-D3A5-4B8D-8A61-0DE7468E2E8C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3FC1E187-04B6-4BE8-99FA-F76F06505D26}
