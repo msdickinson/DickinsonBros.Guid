@@ -12,6 +12,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9 Scripts", "9 Scripts", "{A298E729-D3A5-4B8D-8A61-0DE7468E2E8C}"
 	ProjectSection(SolutionItems) = preProject
 		Scripts\CreateNugetPackagePreRelease.ps1 = Scripts\CreateNugetPackagePreRelease.ps1
+		DickinsonBros.Guid.runsettings = DickinsonBros.Guid.runsettings
+		Scripts\Publish.yml = Scripts\Publish.yml
+		Scripts\Test.yml = Scripts\Test.yml
 	EndProjectSection
 EndProject
 Global
