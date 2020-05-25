@@ -1,4 +1,5 @@
 ﻿using DickinsonBros.Guid.Abstractions;
+using DickinsonBros.Guid.Extensions;
 using DickinsonBros.Guid.Runner.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -72,7 +73,7 @@ Guid 3:
                 }
             });
             services.AddSingleton<IApplicationLifetime>(applicationLifetime);
-            services.AddSingleton<IGuidService, GuidService>();
+            services.AddGuidService();
         }
 
         IServiceCollection InitializeDependencyInjection()
