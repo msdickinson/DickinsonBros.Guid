@@ -14,8 +14,12 @@ Features
 
 <h2>Example Usage</h2>
 
-![Alt text](https://raw.githubusercontent.com/msdickinson/DickinsonBros.Guid/develop/GuidSampleUsage.PNG)
+```C#
 
+    var guid = guidService.NewGuid();
+    Console.WriteLine(guid);
+
+```
 ![Alt text](https://raw.githubusercontent.com/msdickinson/DickinsonBros.Guid/develop/GuidSampleOutput.PNG)
 
 <h2>Setup</h2>
@@ -30,20 +34,20 @@ Features
 <h3>Create Instance</h3>
 
 <i>Code</i>
-    
+```C#    
     using DickinsonBros.Guid;
 
     
     ...
     
     var guidService = new GuidService(options)
-
+```
 
 <h3>Create Instance (With Dependency Injection)</h3>
 
 
 <i>Code</i>
-    
+```C#        
     using DickinsonBros.Guid.Abstractions;
     using DickinsonBros.Guid.Extensions;
     
@@ -59,7 +63,4 @@ Features
     {
        var guidService = provider.GetRequiredService<IGuidService>();
     }
-    
-<b>Example Usage</b>
-
-    var guid = guidService.NewGuid()
+```    
