@@ -20,7 +20,8 @@ Features
     Console.WriteLine(guid);
 
 ```
-![Alt text](https://raw.githubusercontent.com/msdickinson/DickinsonBros.Guid/master/GuidSampleOutput.PNG)
+
+    e7afe98a-34a2-406d-9d99-dd709e75a3de
 
 Example Runner Included in folder "DickinsonBros.Guid.Runner"
 
