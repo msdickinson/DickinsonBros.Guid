@@ -31,19 +31,8 @@ namespace DickinsonBros.Guid.Runner
                     {
                         var guidService = provider.GetRequiredService<IGuidService>();
 
-                        Console.WriteLine
-                        (
-$@"Guid 1: 
-{guidService.NewGuid()}
-
-Guid 2: 
-{guidService.NewGuid()}
-
-Guid 3:
-{guidService.NewGuid()}
-
-"
-                        );
+                        var guid = guidService.NewGuid();
+                        Console.WriteLine(guid);
                     }
                     applicationLifetime.StopApplication();
                     await Task.CompletedTask.ConfigureAwait(false);

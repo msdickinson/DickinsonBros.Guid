@@ -36,6 +36,7 @@ Example Runner Included in folder "DickinsonBros.Guid.Runner"
 <h3>Create Instance</h3>
 
 <i>Code</i>
+
 ```C#    
     using DickinsonBros.Guid;
   
@@ -45,7 +46,6 @@ Example Runner Included in folder "DickinsonBros.Guid.Runner"
 ```
 
 <h3>Create Instance (With Dependency Injection)</h3>
-
 
 <i>Code</i>
 ```C#        
