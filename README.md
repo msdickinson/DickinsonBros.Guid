@@ -20,7 +20,7 @@ Features
     Console.WriteLine(guid);
 
 ```
-![Alt text](https://raw.githubusercontent.com/msdickinson/DickinsonBros.Guid/develop/GuidSampleOutput.PNG)
+![Alt text](https://raw.githubusercontent.com/msdickinson/DickinsonBros.Guid/master/GuidSampleOutput.PNG)
 
 <h2>Setup</h2>
 
