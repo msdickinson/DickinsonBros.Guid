@@ -32,12 +32,15 @@ Features
 <i>Code</i>
     
     using DickinsonBros.Guid;
+
     
     ...
     
     var guidService = new GuidService(options)
 
+
 <h3>Create Instance (With Dependency Injection)</h3>
+
 
 <i>Code</i>
     
@@ -56,3 +59,7 @@ Features
     {
        var guidService = provider.GetRequiredService<IGuidService>();
     }
+    
+<b>Example Usage</b>
+
+    var guid = guidService.NewGuid()
