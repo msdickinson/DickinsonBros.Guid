@@ -36,11 +36,10 @@ Features
 <i>Code</i>
 ```C#    
     using DickinsonBros.Guid;
-
-    
+  
     ...
     
-    var guidService = new GuidService(options)
+    var guidService = new GuidService()
 ```
 
 <h3>Create Instance (With Dependency Injection)</h3>
