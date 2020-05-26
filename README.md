@@ -32,7 +32,7 @@ Example Runner Included in folder "DickinsonBros.Guid.Runner"
 <i>Add Nuget References</i>
 
     https://www.nuget.org/packages/DickinsonBros.Guid/
-    https://www.nuget.org/packages/DickinsonBros.Guid/Abstractions
+    https://www.nuget.org/packages/DickinsonBros.Guid.Abstractions
 
 <h3>Create Instance</h3>
 
@@ -43,7 +43,7 @@ Example Runner Included in folder "DickinsonBros.Guid.Runner"
   
     ...
     
-    var guidService = new GuidService()
+    var guidService = new GuidService();
 ```
 
 <h3>Create Instance (With Dependency Injection)</h3>
