@@ -27,16 +27,14 @@ Example Runner Included in folder "DickinsonBros.Guid.Runner"
 
 <h2>Setup</h2>
 
-<i>Install a windows certificate</i>
+<h3>Install a windows certificate</h3>
 
-<i>Add Nuget References</i>
+<h3>Add Nuget References</h3>
 
     https://www.nuget.org/packages/DickinsonBros.Guid/
     https://www.nuget.org/packages/DickinsonBros.Guid.Abstractions
 
 <h3>Create Instance</h3>
-
-<i>Code</i>
 
 ```C#    
 using DickinsonBros.Guid;
@@ -48,7 +46,6 @@ var guidService = new GuidService();
 
 <h3>Create Instance (With Dependency Injection)</h3>
 
-<i>Code</i>
 ```C#        
 using DickinsonBros.Guid.Abstractions;
 using DickinsonBros.Guid.Extensions;
