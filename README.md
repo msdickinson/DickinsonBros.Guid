@@ -16,8 +16,8 @@ Features
 
 ```C#
 
-    var guid = guidService.NewGuid();
-    Console.WriteLine(guid);
+var guid = guidService.NewGuid();
+Console.WriteLine(guid);
 
 ```
 
@@ -39,30 +39,30 @@ Example Runner Included in folder "DickinsonBros.Guid.Runner"
 <i>Code</i>
 
 ```C#    
-    using DickinsonBros.Guid;
-  
-    ...
-    
-    var guidService = new GuidService();
+using DickinsonBros.Guid;
+
+...
+
+var guidService = new GuidService();
 ```
 
 <h3>Create Instance (With Dependency Injection)</h3>
 
 <i>Code</i>
 ```C#        
-    using DickinsonBros.Guid.Abstractions;
-    using DickinsonBros.Guid.Extensions;
-    
-    ...  
-    
-    var services = new ServiceCollection();   
-    
-    //Add Service
-    serviceCollection.AddGuidService();
-    
-    //Build Service Provider 
-    using (var provider = services.BuildServiceProvider())
-    {
-       var guidService = provider.GetRequiredService<IGuidService>();
-    }
+using DickinsonBros.Guid.Abstractions;
+using DickinsonBros.Guid.Extensions;
+
+...  
+
+var services = new ServiceCollection();   
+
+//Add Service
+serviceCollection.AddGuidService();
+
+//Build Service Provider 
+using (var provider = services.BuildServiceProvider())
+{
+   var guidService = provider.GetRequiredService<IGuidService>();
+}
 ```    
