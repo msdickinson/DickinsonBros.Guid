@@ -22,6 +22,8 @@ Features
 ```
 ![Alt text](https://raw.githubusercontent.com/msdickinson/DickinsonBros.Guid/master/GuidSampleOutput.PNG)
 
+Example Runner Included in folder "DickinsonBros.Guid.Runner"
+
 <h2>Setup</h2>
 
 <i>Install a windows certificate</i>
