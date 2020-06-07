@@ -14,7 +14,7 @@ namespace DickinsonBros.Guid.Runner
     class Program
     {
         IConfiguration _configuration;
-        async static Task Main(string[] args)
+        async static Task Main()
         {
             await new Program().DoMain();
         }
@@ -22,21 +22,19 @@ namespace DickinsonBros.Guid.Runner
         {
             try
             {
-                using (var applicationLifetime = new ApplicationLifetime())
+                using var applicationLifetime = new ApplicationLifetime();
+                var services = InitializeDependencyInjection();
+                ConfigureServices(services, applicationLifetime);
+
+                using (var provider = services.BuildServiceProvider())
                 {
-                    var services = InitializeDependencyInjection();
-                    ConfigureServices(services, applicationLifetime);
+                    var guidService = provider.GetRequiredService<IGuidService>();
 
-                    using (var provider = services.BuildServiceProvider())
-                    {
-                        var guidService = provider.GetRequiredService<IGuidService>();
-
-                        var guid = guidService.NewGuid();
-                        Console.WriteLine(guid);
-                    }
-                    applicationLifetime.StopApplication();
-                    await Task.CompletedTask.ConfigureAwait(false);
+                    var guid = guidService.NewGuid();
+                    Console.WriteLine(guid);
                 }
+                applicationLifetime.StopApplication();
+                await Task.CompletedTask.ConfigureAwait(false);
             }
             catch (Exception e)
             {
