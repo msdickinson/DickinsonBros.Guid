@@ -1,9 +1,9 @@
 ﻿using DickinsonBros.Guid.Abstractions;
 using DickinsonBros.Guid.Extensions;
 using DickinsonBros.Guid.Runner.Services;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
@@ -22,9 +22,8 @@ namespace DickinsonBros.Guid.Runner
         {
             try
             {
-                using var applicationLifetime = new ApplicationLifetime();
                 var services = InitializeDependencyInjection();
-                ConfigureServices(services, applicationLifetime);
+                ConfigureServices(services);
 
                 using (var provider = services.BuildServiceProvider())
                 {
@@ -32,8 +31,8 @@ namespace DickinsonBros.Guid.Runner
 
                     var guid = guidService.NewGuid();
                     Console.WriteLine(guid);
+                    var hostApplicationLifetime = provider.GetService<IHostApplicationLifetime>();
                 }
-                applicationLifetime.StopApplication();
                 await Task.CompletedTask.ConfigureAwait(false);
             }
             catch (Exception e)
@@ -47,7 +46,7 @@ namespace DickinsonBros.Guid.Runner
             }
         }
 
-        private void ConfigureServices(IServiceCollection services, ApplicationLifetime applicationLifetime)
+        private void ConfigureServices(IServiceCollection services)
         {
             services.AddOptions();
             services.AddLogging(config =>
@@ -59,7 +58,7 @@ namespace DickinsonBros.Guid.Runner
                     config.AddConsole();
                 }
             });
-            services.AddSingleton<IApplicationLifetime>(applicationLifetime);
+            services.AddSingleton<IHostApplicationLifetime, HostApplicationLifetime>();
             services.AddGuidService();
         }
 
