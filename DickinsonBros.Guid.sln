@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9 Scripts", "9 Scripts", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Runner", "2 Runner", "{D6847F34-A36C-4C3D-9F1F-9B5E79434147}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DickinsonBros.Guid.Runner", "DickinsonBros.Guid.Runner\DickinsonBros.Guid.Runner.csproj", "{E957AFDF-B5FB-433F-986C-F45F3DB1E95E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Runner", "DickinsonBros.Guid.Runner\DickinsonBros.Guid.Runner.csproj", "{E957AFDF-B5FB-433F-986C-F45F3DB1E95E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
