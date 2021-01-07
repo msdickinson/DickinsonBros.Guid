@@ -3,23 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid", "DickinsonBros.Guid\DickinsonBros.Guid.csproj", "{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Library", "1 Library", "{E5BD1FED-B9DB-46EE-8081-43AA428F9789}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Tests", "DickinsonBros.Guid.Tests\DickinsonBros.Guid.Tests.csproj", "{37D89CD2-095E-4EDF-BF2D-7B410923F028}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Source", "1 Source", "{E5BD1FED-B9DB-46EE-8081-43AA428F9789}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9 Scripts", "9 Scripts", "{A298E729-D3A5-4B8D-8A61-0DE7468E2E8C}"
 	ProjectSection(SolutionItems) = preProject
-		Scripts\CreateNugetPackagePreRelease.ps1 = Scripts\CreateNugetPackagePreRelease.ps1
-		DickinsonBros.Guid.runsettings = DickinsonBros.Guid.runsettings
+		Scripts\Prerelease.DickinsonBros.Guid.ps1 = Scripts\Prerelease.DickinsonBros.Guid.ps1
 		Scripts\Publish.yml = Scripts\Publish.yml
 		Scripts\Test.yml = Scripts\Test.yml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Runner", "2 Runner", "{D6847F34-A36C-4C3D-9F1F-9B5E79434147}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Runner", "3 Runner", "{D6847F34-A36C-4C3D-9F1F-9B5E79434147}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Runner", "DickinsonBros.Guid.Runner\DickinsonBros.Guid.Runner.csproj", "{E957AFDF-B5FB-433F-986C-F45F3DB1E95E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Tests", "2 Tests", "{8A59DB7D-5901-47E0-873D-F4914EFEE2EB}"
+	ProjectSection(SolutionItems) = preProject
+		Tests\DickinsonBros.Guid.runsettings = Tests\DickinsonBros.Guid.runsettings
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Tests", "Tests\DickinsonBros.Guid.Tests\DickinsonBros.Guid.Tests.csproj", "{9F3B059E-5EFB-4A10-B0DE-E6CE6BDF81D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid", "Source\DickinsonBros.Guid\DickinsonBros.Guid.csproj", "{34FAB580-3388-4056-8A8B-926B1960227F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Runner", "Runner\DickinsonBros.Guid.Runner\DickinsonBros.Guid.Runner.csproj", "{F6F94481-E9AC-4FAE-BD6A-53E7F4BC27BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,26 +31,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37D89CD2-095E-4EDF-BF2D-7B410923F028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37D89CD2-095E-4EDF-BF2D-7B410923F028}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37D89CD2-095E-4EDF-BF2D-7B410923F028}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37D89CD2-095E-4EDF-BF2D-7B410923F028}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E957AFDF-B5FB-433F-986C-F45F3DB1E95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E957AFDF-B5FB-433F-986C-F45F3DB1E95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E957AFDF-B5FB-433F-986C-F45F3DB1E95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E957AFDF-B5FB-433F-986C-F45F3DB1E95E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F3B059E-5EFB-4A10-B0DE-E6CE6BDF81D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F3B059E-5EFB-4A10-B0DE-E6CE6BDF81D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F3B059E-5EFB-4A10-B0DE-E6CE6BDF81D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F3B059E-5EFB-4A10-B0DE-E6CE6BDF81D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FAB580-3388-4056-8A8B-926B1960227F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FAB580-3388-4056-8A8B-926B1960227F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FAB580-3388-4056-8A8B-926B1960227F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FAB580-3388-4056-8A8B-926B1960227F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F94481-E9AC-4FAE-BD6A-53E7F4BC27BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F94481-E9AC-4FAE-BD6A-53E7F4BC27BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F94481-E9AC-4FAE-BD6A-53E7F4BC27BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F94481-E9AC-4FAE-BD6A-53E7F4BC27BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A571EE6F-7CE6-425B-8DE7-0E36CB6D3122} = {E5BD1FED-B9DB-46EE-8081-43AA428F9789}
-		{37D89CD2-095E-4EDF-BF2D-7B410923F028} = {E5BD1FED-B9DB-46EE-8081-43AA428F9789}
-		{E957AFDF-B5FB-433F-986C-F45F3DB1E95E} = {D6847F34-A36C-4C3D-9F1F-9B5E79434147}
+		{9F3B059E-5EFB-4A10-B0DE-E6CE6BDF81D5} = {8A59DB7D-5901-47E0-873D-F4914EFEE2EB}
+		{34FAB580-3388-4056-8A8B-926B1960227F} = {E5BD1FED-B9DB-46EE-8081-43AA428F9789}
+		{F6F94481-E9AC-4FAE-BD6A-53E7F4BC27BD} = {D6847F34-A36C-4C3D-9F1F-9B5E79434147}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3FC1E187-04B6-4BE8-99FA-F76F06505D26}

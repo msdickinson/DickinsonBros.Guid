@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DickinsonBros.Guid\DickinsonBros.Guid.csproj" />
+    <ProjectReference Include="..\..\Source\DickinsonBros.Guid\DickinsonBros.Guid.csproj" />
   </ItemGroup>
 
 </Project>
