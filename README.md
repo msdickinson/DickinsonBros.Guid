@@ -19,4 +19,4 @@ Console.WriteLine(guid);
 
     e7afe98a-34a2-406d-9d99-dd709e75a3de
 
-[Sample Runner](https://github.com/msdickinson/DickinsonBros.Guid/tree/master/DickinsonBros.Guid.Runner)
+[Sample Runner](/Runner/DickinsonBros.Guid.Runner)
