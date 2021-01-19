@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Source", "1 Source", "{E5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9 Scripts", "9 Scripts", "{A298E729-D3A5-4B8D-8A61-0DE7468E2E8C}"
 	ProjectSection(SolutionItems) = preProject
-		Scripts\Prerelease.DickinsonBros.Guid.ps1 = Scripts\Prerelease.DickinsonBros.Guid.ps1
+		Scripts\PackagePrerelease.ps1 = Scripts\PackagePrerelease.ps1
 		Scripts\Publish.yml = Scripts\Publish.yml
 		Scripts\Test.yml = Scripts\Test.yml
 	EndProjectSection
@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Runner", "3 Runner", "{D6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Tests", "2 Tests", "{8A59DB7D-5901-47E0-873D-F4914EFEE2EB}"
 	ProjectSection(SolutionItems) = preProject
-		Tests\DickinsonBros.Guid.runsettings = Tests\DickinsonBros.Guid.runsettings
+		Tests\CodeCoverage.runsettings = Tests\CodeCoverage.runsettings
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DickinsonBros.Guid.Tests", "Tests\DickinsonBros.Guid.Tests\DickinsonBros.Guid.Tests.csproj", "{9F3B059E-5EFB-4A10-B0DE-E6CE6BDF81D5}"
